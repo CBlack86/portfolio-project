@@ -4,7 +4,6 @@ import Contact from "./Contact.tsx";
 import './App.css'
 
 function App() {
-  
 
   return (
     <>

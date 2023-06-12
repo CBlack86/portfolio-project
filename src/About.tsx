@@ -11,11 +11,16 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+import {useRecoilState} from 'recoil';
+import {displayState} from './State.tsx';
+
 
 const About = () => {
-    
+  const [testCount] = useRecoilState(displayState)  
+
   return (
       <>
+        <span>Test Counter: {testCount}</span>
          <p>
              Welcome to my page, my name is Cody Black and I am an aspiring full stack software
              engineer. While receiving my Master's Degree in CyberSecurity I was required to learn
