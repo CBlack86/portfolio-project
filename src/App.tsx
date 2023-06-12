@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import Projects from "./Projects.tsx";
 import About from "./About.tsx";
+import Contact from "./Contact.tsx";
 import './App.css'
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
       </p>
       <About />
       <Projects />
+      <Contact />
     </>
   )
 }
