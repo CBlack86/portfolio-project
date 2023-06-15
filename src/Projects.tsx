@@ -12,24 +12,37 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import drum from "./assets/drum-machine.png";
+import fcc_calc from "./assets/fcc-calculator-project.png";
+import group_calc from "./assets/group-calculator-project.png";
+import md_preview from "./assets/markdown-previewer.png";
+import pomo_clock from "./assets/pomodoro-clock.png";
+import quote from "./assets/random-quote-generator.png";
+
 const Projects = () => {
     
   return (
       <>
           <div>
-              <span>Open Source Projects</span>
+              <h1>Open Source Projects</h1>
                   <ul>
                       <li>Group Calclator Project</li>
+                      <img src={group_calc} className="proImg" />
                   </ul>
           </div>
           <div>
-              <span>freeCodeCamp Projects</span>
+              <h1>freeCodeCamp Projects</h1>
                   <ul>
                       <li>"25 + 5 Clock"</li>
+                      <img src={pomo_clock} className="proImg" />
                       <li>"Javascript Calculator"</li>
+                      <img src={fcc_calc} className="proImg" />
                       <li>"Drum Machine"</li>
+                      <img src={drum} className="proImg" />
                       <li>"Markdown Previewer"</li>
+                      <img src={md_preview} className="proImg" />
                       <li>"Random Quote Machine"</li>
+                      <img src={quote} className="proImg" />
                   </ul>
           </div>
       </>
