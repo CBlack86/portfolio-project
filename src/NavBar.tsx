@@ -14,6 +14,7 @@
 
 import {Link}  from "react-router-dom";
 import mainLogo from "./assets/logoipsum-298.svg";
+import "./NavBar.css";
 
 const NavBar = () => {
 
