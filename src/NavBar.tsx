@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import {Link}  from "react-router-dom";
+import mainLogo from "./assets/logoipsum-298.svg";
 
 const NavBar = () => {
 
@@ -20,7 +21,7 @@ const NavBar = () => {
     <>
       <nav className="header">
             <div className="nav-logo">
-            
+            <img src={mainLogo} id="logo" />
             </div>
             <div className="nav-button">
               <ul className="list">

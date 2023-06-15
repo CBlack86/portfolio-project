@@ -26,7 +26,7 @@ function App() {
 }
 function Layout() {
   return (
-    <div style={{backgroundColor: '#d9d9d9'}}>
+    <div>
       <NavBar />
       <Outlet />
     </div>
