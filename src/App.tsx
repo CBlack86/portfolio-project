@@ -2,6 +2,7 @@ import Projects from "./Projects.tsx";
 import About from "./About.tsx";
 import Contact from "./Contact.tsx";
 import Welcome from "./Welcome.tsx";
+import NavBar from "./NavBar.tsx";
 import { Routes, Route, Outlet } from "react-router-dom";
 import './App.css'
 
@@ -26,6 +27,7 @@ function App() {
 function Layout() {
   return (
     <div style={{backgroundColor: '#d9d9d9'}}>
+      <NavBar />
       <Outlet />
     </div>
   );
