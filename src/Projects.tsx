@@ -18,6 +18,7 @@ import group_calc from "./assets/group-calculator-project.png";
 import md_preview from "./assets/markdown-previewer.png";
 import pomo_clock from "./assets/pomodoro-clock.png";
 import quote from "./assets/random-quote-generator.png";
+import "./Projects.css";
 
 const Projects = () => {
     
