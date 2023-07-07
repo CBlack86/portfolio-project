@@ -14,13 +14,22 @@
 
 import {Link}  from "react-router-dom";
 import mainLogo from "./assets/logoipsum-298.svg";
+import {
+  AppBar,
+  Toolbar,
+  CssBaseline,
+  Typography,
+  makeStyles,
+} from "@mui/material";
 import "./NavBar.css";
 
 const NavBar = () => {
 
   return (
     <>
-      <nav className="header">
+      <AppBar position='relative'>
+        <Toolbar>
+          <Typography>
             <div className="nav-logo">
             <img src={mainLogo} id="logo" />
             </div>
@@ -32,7 +41,9 @@ const NavBar = () => {
                 <li><Link to="/contact">Contact Me</Link></li>
               </ul>
             </div>
-        </nav>
+          </Typography>
+        </Toolbar>
+      </AppBar>
     </>
   )
 };

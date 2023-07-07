@@ -18,7 +18,20 @@ import group_calc from "./assets/group-calculator-project.png";
 import md_preview from "./assets/markdown-previewer.png";
 import pomo_clock from "./assets/pomodoro-clock.png";
 import quote from "./assets/random-quote-generator.png";
+import {
+    Typography,
+    AppBar,
+    Card,
+    CardActions,
+    CardContent,
+    CardMedia,
+    CssBaseline,
+    Grid,
+    Toolbar,
+    Container,
+  } from '@mui/material';
 import "./Projects.css";
+
 
 const Projects = () => {
     
