@@ -5,11 +5,12 @@ import Welcome from "./Welcome.tsx";
 import NavBar from "./NavBar.tsx";
 import { Routes, Route, Outlet } from "react-router-dom";
 import './App.css'
+import React from "react";
 
 function App() {
 
   return (
-    <>
+    <React.Fragment>
     <Routes>
       <Route path="/" element={<Layout />} >
         <Route index element={<Welcome />} />
@@ -21,7 +22,7 @@ function App() {
       
      
       
-    </>
+    </React.Fragment>
   )
 }
 function Layout() {

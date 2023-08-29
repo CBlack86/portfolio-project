@@ -12,35 +12,32 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {Link}  from "react-router-dom";
+
 import mainLogo from "./assets/logoipsum-298.svg";
 import {
   AppBar,
   Toolbar,
-  CssBaseline,
-  Typography,
-  makeStyles,
-} from "@mui/material";
+  Typography, 
+  Button
+} from "@mui/material"; 
 import "./NavBar.css";
+import { useNavigate } from "react-router-dom"
 
 const NavBar = () => {
+  const nav = useNavigate();
 
   return (
     <>
       <AppBar position='relative'>
         <Toolbar>
-          <Typography>
-            <div className="nav-logo">
+          <Typography >
+            
             <img src={mainLogo} id="logo" />
-            </div>
-            <div className="nav-button">
-              <ul className="list">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About Me</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/contact">Contact Me</Link></li>
-              </ul>
-            </div>
+            <Button color='inherit'  onClick={() => nav('/')}>Home</Button>
+            <Button color='inherit' onClick={() => nav('/about')}>About Me</Button>
+            <Button color='inherit' onClick={() => nav('/projects')}>Projects</Button>
+            <Button color='inherit' onClick={() => nav('/contact')}>Contact Me</Button>
+            
           </Typography>
         </Toolbar>
       </AppBar>
@@ -48,4 +45,4 @@ const NavBar = () => {
   )
 };
 
-export default NavBar;
+export default NavBar; 
