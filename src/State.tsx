@@ -20,3 +20,8 @@ export const displayState = atom ({
     default: '0',
 });
 
+export const darkState = atom ({
+    key: 'theme',
+    default: 'light',
+});
+

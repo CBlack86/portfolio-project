@@ -5,9 +5,17 @@ import Welcome from "./Welcome.tsx";
 import NavBar from "./NavBar.tsx";
 import { Routes, Route, Outlet } from "react-router-dom";
 import './App.css'
-import React from "react";
+import React from 'react';
+import {useState} from "react";
 
 function App() {
+  // The light theme is used by default
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  // This function is triggered when the Switch component is toggled
+  const changeTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
 
   return (
     <React.Fragment>
