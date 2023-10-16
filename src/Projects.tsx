@@ -31,35 +31,77 @@ import {
     Container,
   } from '@mui/material';
 import "./Projects.css";
+import React from "react";
 
 
 const Projects = () => {
     
   return (
-      <>
-          <div>
-              <h1>Open Source Projects</h1>
-                  <ul>
-                      <li>Group Calclator Project</li>
-                      <img src={group_calc} className="proImg" />
-                  </ul>
-          </div>
-          <div>
-              <h1>freeCodeCamp Projects</h1>
-                  <ul>
-                      <li>"25 + 5 Clock"</li>
-                      <img src={pomo_clock} className="proImg" />
-                      <li>"Javascript Calculator"</li>
-                      <img src={fcc_calc} className="proImg" />
-                      <li>"Drum Machine"</li>
-                      <img src={drum} className="proImg" />
-                      <li>"Markdown Previewer"</li>
-                      <img src={md_preview} className="proImg" />
-                      <li>"Random Quote Machine"</li>
-                      <img src={quote} className="proImg" />
-                  </ul>
-          </div>
-      </>
+    <React.Fragment>
+    <h1>Projects</h1>
+      <Grid container spacing="2">
+              
+              <Grid item xs={6} md={8}>
+                  <Card sx={{minWidth: 275, maxWidth: 345}} variant="outlined">
+                    <CardMedia sx={{height: 140}}
+                    image={group_calc}
+                    title="Group Calculator Project" 
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5">Group Calculor Project</Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        This was a project that I undertook with a group of students under the supervision of a mentor
+                        </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+                <Grid item xs={6} md={8}>
+                  <Card sx={{minWidth: 275, maxWidth: 345}} variant="outlined">
+                  <CardMedia sx={{height: 140}}
+                    image={pomo_clock}
+                    title="25 + 5 Clock" 
+                    />
+                      
+                  </Card>
+                </Grid>
+                <Grid item xs={6} md={8}>
+                  <Card sx={{minWidth: 275, maxWidth: 345}} variant="outlined">
+                  <CardMedia sx={{height: 140}}
+                    image={fcc_calc}
+                    title="JavaScript Calculator" 
+                    />
+                     
+                    </Card>
+                </Grid>
+                <Grid item xs={6} md={8}>
+                    <Card sx={{minWidth: 275, maxWidth: 345}} variant="outlined">
+                    <CardMedia sx={{height: 140}}
+                    image={drum}
+                    title="Drum Machine" 
+                    />
+                      
+                    </Card>
+                </Grid>
+                <Grid item xs={6} md={8}>
+                    <Card sx={{minWidth: 275, maxWidth: 345}} variant="outlined">
+                    <CardMedia sx={{height: 140}}
+                    image={md_preview}
+                    title="Markdown Previewers" 
+                    />
+                      
+                    </Card>
+                </Grid>
+                <Grid item xs={6} md={8}>
+                    <Card sx={{minWidth: 275, maxWidth: 345}} variant="outlined">
+                    <CardMedia sx={{height: 140}}
+                    image={quote}
+                    title="Random Quote Machine" 
+                    />
+                      
+                  </Card>
+                </Grid>
+      </Grid>
+    </React.Fragment>
   )
 }
 

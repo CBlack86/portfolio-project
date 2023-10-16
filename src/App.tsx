@@ -9,13 +9,6 @@ import React from 'react';
 import {useState} from "react";
 
 function App() {
-  // The light theme is used by default
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
-
-  // This function is triggered when the Switch component is toggled
-  const changeTheme = () => {
-    setIsDarkTheme(!isDarkTheme);
-  };
 
   return (
     <React.Fragment>

@@ -28,14 +28,12 @@ import {darkState} from './State.tsx';
 
 const NavBar = () => {
   const nav = useNavigate();
-  const [isDarkTheme, setIsDarkTheme] = useRecoilState(darkState) 
+   
 // The light theme is used by default
 
 
 // This function is triggered when the Switch component is toggled
-const changeTheme = () => {
-  setIsDarkTheme(!isDarkTheme);
-};
+
 
   return (
     <>
@@ -48,7 +46,6 @@ const changeTheme = () => {
             <Button color='inherit' onClick={() => nav('/about')}>About Me</Button>
             <Button color='inherit' onClick={() => nav('/projects')}>Projects</Button>
             <Button color='inherit' onClick={() => nav('/contact')}>Contact Me</Button>
-            <Switch checked={isDarkTheme} onChange={changeTheme} />
           </Typography>
         </Toolbar>
       </AppBar>
