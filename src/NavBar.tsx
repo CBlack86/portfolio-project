@@ -13,7 +13,7 @@
 // limitations under the License.
 
 
-import mainLogo from "./assets/logoipsum-298.svg";
+import mainLogo from "./assets/Cody Design.svg";
 import {
   AppBar,
   Toolbar,
@@ -24,15 +24,11 @@ import {
 import "./NavBar.css";
 import { useNavigate } from "react-router-dom"
 import {useRecoilState} from 'recoil';
-import {darkState} from './State.tsx';
+
 
 const NavBar = () => {
   const nav = useNavigate();
    
-// The light theme is used by default
-
-
-// This function is triggered when the Switch component is toggled
 
 
   return (

@@ -7,11 +7,16 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import './App.css'
 import React from 'react';
 import {useState} from "react";
+import { ThemeProvider } from '@emotion/react';
+import {themeOptions} from "./theme.tsx"
+import { CssBaseline } from "@mui/material";
 
 function App() {
 
   return (
     <React.Fragment>
+    <ThemeProvider theme={themeOptions}>
+    <CssBaseline enableColorScheme />
     <Routes>
       <Route path="/" element={<Layout />} >
         <Route index element={<Welcome />} />
@@ -22,7 +27,7 @@ function App() {
     </Routes>
       
      
-      
+      </ThemeProvider>
     </React.Fragment>
   )
 }

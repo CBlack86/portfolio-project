@@ -12,16 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 import { ThemeOptions } from '@mui/material/styles';
+import { createTheme } from '@mui/material';
 
 
-export const DarkThemeOptions: ThemeOptions = {
+export const themeOptions = createTheme( {
   palette: {
     mode: 'dark',
     primary: {
-      main: '#e85a4f',
+      main: '#cedfd9',
     },
     secondary: {
-      main: '#d8c3a5',
+      main: '#b09398',
     },
     error: {
       main: '#f50606',
@@ -29,23 +30,9 @@ export const DarkThemeOptions: ThemeOptions = {
     info: {
       main: '#376e6f',
     },
+    background: {
+      default: '#5f5449',
+    },
   },
-};
+});
 
-export const LightThemeOptions: ThemeOptions = {
-  palette: {
-    mode: 'light',
-    primary: {
-      main: '#e85a4f',
-    },
-    secondary: {
-      main: '#d8c3a5',
-    },
-    error: {
-      main: '#f50606',
-    },
-    info: {
-      main: '#376e6f',
-    },
-  },
-};
