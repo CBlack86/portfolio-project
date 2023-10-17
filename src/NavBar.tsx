@@ -34,7 +34,7 @@ const NavBar = () => {
   return (
     <>
       <AppBar position='relative'>
-        <Toolbar>
+        <Toolbar >
           <Typography >
             
             <img src={mainLogo} id="logo" />

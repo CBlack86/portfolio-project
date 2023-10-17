@@ -19,10 +19,10 @@ export const themeOptions = createTheme( {
   palette: {
     mode: 'dark',
     primary: {
-      main: '#cedfd9',
+      main: '#005B41',
     },
     secondary: {
-      main: '#b09398',
+      main: '#008170',
     },
     error: {
       main: '#f50606',
@@ -31,7 +31,8 @@ export const themeOptions = createTheme( {
       main: '#376e6f',
     },
     background: {
-      default: '#5f5449',
+      default: '#0F0F0F',
+      paper: '#232D3F'
     },
   },
 });
